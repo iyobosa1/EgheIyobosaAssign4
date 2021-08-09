@@ -1,5 +1,4 @@
 package eghe.iyobosa.n01107171.ei;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,26 +6,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.pm.ActivityInfo;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.annotation.Nullable;
 
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.Calendar;
 
-public class EgheActivity extends AppCompatActivity {
+public class EgheActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
 
@@ -39,15 +29,18 @@ public class EgheActivity extends AppCompatActivity {
         setContentView(R.layout.activity_eghe);
 
         toolbar = findViewById(R.id.toolbar);
-//      setSupportActionBar(toolbar);
+//  setSupportActionBar(toolbar);
 
         NavigationView navigationView = findViewById(R.id.egheNav_view);
-//       navigationView.setNavigationItemSelectedListener(this);
+       navigationView.setNavigationItemSelectedListener(this);
        drawerLayout = findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
+            if(savedInstanceState==null) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container, new DownloadFrag()).commit();
+                navigationView.setCheckedItem(R.id.egheEghe);
+            }
 
     }
     @Override
@@ -81,13 +74,13 @@ public class EgheActivity extends AppCompatActivity {
     }
 
 
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-////        switch (menuItem.getItemId()) {
-////            case R.id.nhungHome:
-////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NhHome()).commit();
-////                break;
-////            case R.id.nhungNhung:
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.egheEghe:
+                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new DownloadFrag()).commit();
+                break;
+//            case R.id.nhungNhung:
 ////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NhuDown()).commit();
 ////
 ////                break;
@@ -98,8 +91,8 @@ public class EgheActivity extends AppCompatActivity {
 ////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NhuSet()).commit();
 ////                break;
 //
-//        //}
-////        drawerLayout.closeDrawer(GravityCompat.START);
-//        return true;
-//   }
+        }
+      drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+   }
     }

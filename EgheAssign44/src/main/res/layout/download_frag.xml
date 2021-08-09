@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBg3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DownloadFrag">
+
+
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="189dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:background="#D88686"
+        android:entries="@array/courses"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
