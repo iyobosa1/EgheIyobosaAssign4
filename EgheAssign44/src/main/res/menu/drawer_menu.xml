@@ -8,11 +8,6 @@
         android:title="Download"
         android:icon="@drawable/ic_baseline_eco_24"
         />
-<!--    <item-->
-<!--        android:id="@+id/eghe"-->
-<!--        android:title="c"-->
-<!--        android:icon="@drawable/ic_baseline_filter_vintage_24"-->
-<!--        />-->
 
     <item
         android:id="@+id/egheSetting"
