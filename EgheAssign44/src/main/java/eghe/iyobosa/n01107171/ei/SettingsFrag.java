@@ -149,6 +149,8 @@ public class SettingsFrag extends Fragment {
             ln.setBackgroundColor(Color.GREEN);
         }else if(bg.equals("Red")){
             ln.setBackgroundColor(Color.RED);
+        }else if(bg.equals("Blue")){
+            ln.setBackgroundColor(Color.BLUE);
         }else{
             ln.setBackgroundColor(Color.WHITE);
 

@@ -34,6 +34,12 @@
             android:layout_height="wrap_content"
             android:text="@string/red"
             android:layout_marginLeft="20dp"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue"
+            android:layout_marginLeft="20dp"></RadioButton>
+
     </RadioGroup>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_margin="5dp"
@@ -129,6 +135,36 @@
             android:id="@+id/sw"/>
 
     </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/inputValue"
+        />
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <RadioButton-->
+<!--            android:text="@string/celsius"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:id="@+id/radio0"-->
+<!--            android:layout_weight="0" />-->
+
+<!--        <RadioButton-->
+<!--            android:text="@string/fahrenheit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/radio1"-->
+<!--            android:layout_weight="0" />-->
+<!--    </RadioGroup>-->
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

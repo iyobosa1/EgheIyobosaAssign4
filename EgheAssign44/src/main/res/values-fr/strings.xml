@@ -25,6 +25,9 @@
     <string name="defa">Default</string>
     <string name="green">Green</string>
     <string name="red">Red</string>
+    <string name="blue">Blue</string>
     <string name="wait">Downloading.....Please wait</string>
     <string name="setting">Setting</string>
+
+
 </resources>
