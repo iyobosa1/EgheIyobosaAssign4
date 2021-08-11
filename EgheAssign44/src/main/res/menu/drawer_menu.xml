@@ -4,21 +4,21 @@
     tools:showIn="navigation_view">
 
     <item
-        android:id="@+id/egheEghe"
+        android:id="@+id/egheDownload"
         android:title="Download"
         android:icon="@drawable/ic_baseline_eco_24"
         />
-
     <item
-        android:id="@+id/egheSetting"
+        android:id="@+id/egheWeather"
         android:title="Weather"
+        android:icon="@drawable/ic_baseline_brightness_5_24"
+        />
+    <item
+        android:id="@+id/egheSettings"
+        android:title="Settings"
         android:icon="@drawable/ic_baseline_favorite_24"
         />
 
-    <item
-        android:id="@+id/egheHome"
-        android:title="Settings"
-        android:icon="@drawable/ic_baseline_brightness_5_24"
-        />
+
 
 </menu>

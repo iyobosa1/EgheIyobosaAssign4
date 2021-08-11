@@ -21,5 +21,10 @@
         <item>CENG 320</item>
 
     </string-array>
-    <string name="pickadate">Please pick a date</string>
+
+    <string name="defa">Default</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="wait">Downloading.....Please wait</string>
+    <string name="setting">Setting</string>
 </resources>

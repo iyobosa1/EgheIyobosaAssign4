@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">EgheIyobosaN01107171</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="items_name">
+        <item>Auto</item>
+        <item>Porttrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="items_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="courses">
+        <item>CENG 317</item>
+        <item>CENG 318</item>
+        <item>CENG 319</item>
+        <item>CENG 320</item>
+
+    </string-array>
+
+    <string name="defa">Default</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="wait">Downloading.....Please wait</string>
+    <string name="setting">Setting</string>
 </resources>

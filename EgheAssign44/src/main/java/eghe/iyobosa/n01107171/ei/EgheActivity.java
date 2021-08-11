@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -29,7 +30,7 @@ public class EgheActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_eghe);
 
         toolbar = findViewById(R.id.toolbar);
-//  setSupportActionBar(toolbar);
+// setSupportActionBar(toolbar);
 
         NavigationView navigationView = findViewById(R.id.egheNav_view);
        navigationView.setNavigationItemSelectedListener(this);
@@ -39,7 +40,7 @@ public class EgheActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
             if(savedInstanceState==null) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container, new DownloadFrag()).commit();
-                navigationView.setCheckedItem(R.id.egheEghe);
+                navigationView.setCheckedItem(R.id.egheDownload);
             }
 
     }
@@ -77,22 +78,21 @@ public class EgheActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.egheEghe:
+            case R.id.egheDownload:
                 getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new DownloadFrag()).commit();
                 break;
-//            case R.id.nhungNhung:
-////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NhuDown()).commit();
-////
+
+////            case R.id.egheWeather:
+////                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new weather_frag()).commit();
 ////                break;
-////            case R.id.nhungNguyen:
-////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NgSrv()).commit();
-////                break;
-////            case R.id.nhungSetting:
-////                getSupportFragmentManager().beginTransaction().replace(R.id.nhungFragment_container,new NhuSet()).commit();
-////                break;
-//
+            case R.id.egheSettings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new SettingsFrag()).commit();
+                break;
+
         }
       drawerLayout.closeDrawer(GravityCompat.START);
         return true;
    }
-    }
+
+
+}
