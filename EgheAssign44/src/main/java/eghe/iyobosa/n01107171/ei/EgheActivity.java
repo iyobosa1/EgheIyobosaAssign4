@@ -1,3 +1,5 @@
+
+//Eghe Iyobosa N01107171 Section RNB
 package eghe.iyobosa.n01107171.ei;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -82,9 +84,9 @@ public class EgheActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new DownloadFrag()).commit();
                 break;
 
-////            case R.id.egheWeather:
-////                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new weather_frag()).commit();
-////                break;
+            case R.id.egheWeather:
+                getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new WeatherFrag()).commit();
+                break;
             case R.id.egheSettings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.egheFragment_container,new SettingsFrag()).commit();
                 break;

@@ -31,5 +31,14 @@
         android:id="@+id/txtDisplayZip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format24Hour="hh:mm:ss"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
 
 </LinearLayout>

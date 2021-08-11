@@ -1,3 +1,4 @@
+//Eghe Iyobosa N01107171 Section RNB
 package eghe.iyobosa.n01107171.ei;
 
 import android.os.AsyncTask;
@@ -75,6 +76,9 @@ public class WeatherFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
         View view = inflater.inflate(R.layout.weather_frag, container, false);
         editTextNumberDecimal =  view.findViewById(R.id.editTextNumberDecimal);
         txtDisplayZip = view.findViewById(R.id.txtDisplayZip);
